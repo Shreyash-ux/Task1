@@ -1,6 +1,7 @@
 provider "google" {
   project     = var.project_name
   region      = var.region_name
+  credentials = "./cred.json" 
 }
 resource "google_service_account" "service_account" {
   account_id   = "service-hello-test-account-id"
